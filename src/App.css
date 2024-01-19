@@ -1,38 +1,183 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0; 
+  overflow-x: hidden; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-component {
+  background-color: rgb(236, 232, 232); 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.fb-header {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.fb-nav {
+  width: 100%;
+  background-color: #3b5998;
+  height: 78px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px 5px 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fb-nav h1 {
+  font-size: 2.2em;
+}
+
+.login-form {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.login-form label {
+  font-size: 0.9em;
+  grid-row: 1;
+}
+
+.login-form input {
+  grid-row: 2;
+  margin-right: 10px;
+  outline: none;
+}
+
+.login-btt {
+  grid-row: 2;
+  width: 60px;
+  background-color: rgb(56, 56, 194);
+  color: white;
+  outline: none;
+  border: none;
+  padding: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.forgotten-account {
+  position: relative;
+  right: 185px;
+  top: 45px;
+  font-size: 0.8em;
+  color: darkgrey;
+}
+
+.second-form {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.welcome-page {
+  width: 40%;
+  padding: 5px 10px 5px 10px;
+  color: rgb(36, 36, 82);
+  margin-top: 10px;
+}
+
+.signup-form {
+  margin-top: 10px;
+  width: 500px;
+}
+
+.signup-form h1 {
+  line-height: 0.6em;
+}
+
+.signup-form h3 {
+  font-weight: normal;
+}
+
+.signup-form p {
+  font-size: 0.8em;
+  margin-top: 18px;
+  color: rgb(104, 102, 102);
+}
+
+.signup-form p a {
+  text-decoration: none;
+}
+
+.create-account {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-account input {
+  width: 420px;
+  height: 30px;
+  padding: 5px 7px 5px 7px;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  outline: none;
+  border: 1px solid silver;
+  border-radius: 5px;
+}
+
+.create-account input[type="password"] {
+  margin-bottom: 13px;
+}
+
+.create-account p {
+  font-size: 0.7em;
+  color: rgb(104, 102, 102);
+  width: 320px;
+}
+
+.create-account p a {
+  text-decoration: none;
+}
+
+.date-input {
+  display: flex;
+}
+
+.date-input select {
+  width: 72px;
+  padding: 7px;
+  border: 1px solid silver;
+}
+
+.date-input input {
+  display: flex;
+}
+
+.date-input a {
+  position: relative;
+  left: 10px;
+  text-decoration: none; 
+  font-family:'Times New Roman', Times, serif;
+  font-size: 0.9em;
+  width: 180px;
+}
+
+.gender-check label {
+  padding: 10px;
+}
+
+.gender-check input[type="radio"] {
+  position: relative;
+  top: 5px;
+  width: 12px;
+  margin-right: 5px;
+}
+
+.add-name input {
+  width: 195px;
+  margin-right: 12px;
+  padding: 5px 7px 5px 7px;
+  font-size: 1.1em;
+}
+
+#signup-button {
+  width: 200px;
+  font-size: 1.2em;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold; 
+  color: white; 
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid silver;
+  outline: none;
+  background-color: rgb(35, 92, 35);
+  cursor: pointer;
 }
